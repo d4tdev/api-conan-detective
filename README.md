@@ -1,4 +1,4 @@
-![GIF-CONAN](https://www.fanpop.com/clubs/detective-conan/images/39997430/title/conan-fanart)  <br>
+![GIF-CONAN](https://images6.fanpop.com/image/photos/39900000/conan-detective-conan-39997430-500-283.gif)  <br>
 
 # API CONAN DETECTIVE
 
