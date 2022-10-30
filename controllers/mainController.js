@@ -93,7 +93,7 @@ class MainController {
                         .replace('Unknown', 'Không có thông tin')
                         .replace('unknown', 'Không có thông tin');
                      details.push(detail);
-                     titles.push(title.toLowerCase());
+                     titles.push(title.toLowerCase().replace(' ', '_'));
                   });
                for (let i = 0; i < titles.length; i++) {
                   character[titles[i]] = details[i];
