@@ -25,17 +25,16 @@
 
 | Key           | Type                 |
 | ------------- | -------------------- |
-| name          | String               |
-| images        | String               |
+| english name  | String               |
+| age           | String               |
 | japanese name | String               |
-| affiliations  | String               |
-| occupations   | String               |
-| origin        | String               |
-| residence     | String               |
-| alias         | String               |
-| epithet       | String               |
-| birth name    | String               |
+| gender        | String               |
+| height        | String               |
+| weight        | String               |
+| date of birth | String               |
+| relatives     | String               |
+| occupation    | String               |
 | status        | String               |
-| bounty        | String               |
-| devil fruit   | String               |
-| gallery       | String (get gallery) |
+| aliases       | String               |
+| image         | String               |
+
