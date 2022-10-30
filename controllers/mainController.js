@@ -32,7 +32,7 @@ class MainController {
                            'https://www.detectiveconanworld.com' + picture,
                         role,
                         link:
-                           'http://localhost:3000/api/character/' +
+                           'https://api-conan.herokuapp.com/api/character' +
                            name.split(' ').join('_'),
                      });
                   });
