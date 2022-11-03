@@ -8,7 +8,7 @@ const characterUrl = process.env.CHARACTER_URL;
 class MainController {
    // GET ALL CHARACTERS
    getAllCharacters = async (req, res) => {
-      const characters = [];
+      let characters = [];
 
       try {
          axios(url).then(response => {
@@ -38,6 +38,28 @@ class MainController {
                   });
             });
 
+            let { page, limit, name } = req.query;
+
+            // pagination
+            if (page) {
+               page = parseInt(page);
+               const PAGE_SIZE = 20;
+               characters = characters.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+            }
+
+            // search
+            if (name) {
+               characters = characters.filter(character =>
+                  character.name.toLowerCase().includes(name.toLowerCase())
+               );
+            }
+
+            // limit
+            if (limit) {
+               limit = parseInt(limit);
+               characters = characters.slice(0, limit);
+            }
+            
             res.status(200).json({ count: characters.length, characters });
          });
       } catch (e) {
