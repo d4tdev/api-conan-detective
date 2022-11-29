@@ -2,10 +2,8 @@ const cheerio = require('cheerio');
 const axios = require('axios');
 require('dotenv').config();
 
-// const url = process.env.URL;
-// const characterUrl = process.env.CHARACTER_URL;
-const url = 'https://www.detectiveconanworld.com/wiki/Characters';
-const characterUrl = 'https://www.detectiveconanworld.com/wiki/';
+const url = process.env.URL;
+const characterUrl = process.env.CHARACTER_URL;
 
 class MainController {
    // GET ALL CHARACTERS
