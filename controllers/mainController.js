@@ -15,7 +15,7 @@ class MainController {
             const html = response.data;
             const $ = cheerio.load(html);
 
-            $('.chartable', html).each(function () {
+            $('table', html).each(function () {
                $(this)
                   .find('tr')
                   .not(':first-child')
