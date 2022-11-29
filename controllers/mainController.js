@@ -32,7 +32,7 @@ class MainController {
                            'https://www.detectiveconanworld.com' + picture,
                         role,
                         link:
-                           'https://api-conan.herokuapp.com/api/character/' +
+                           'https://api-conan.cyclic.app/api/character/' +
                            name.split(' ').join('_'),
                      });
                   });
@@ -44,7 +44,10 @@ class MainController {
             if (page) {
                page = parseInt(page);
                const PAGE_SIZE = 20;
-               characters = characters.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+               characters = characters.slice(
+                  (page - 1) * PAGE_SIZE,
+                  page * PAGE_SIZE
+               );
             }
 
             // search
@@ -59,7 +62,7 @@ class MainController {
                limit = parseInt(limit);
                characters = characters.slice(0, limit);
             }
-            
+
             res.status(200).json({ count: characters.length, characters });
          });
       } catch (e) {
