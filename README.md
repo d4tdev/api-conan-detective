@@ -21,7 +21,7 @@
 
 ```GET: https://api-conan.cyclic.app/api/character/{name}```<br>
 
-> ex: https://api-conan.cyclic.app /api/character/Shinichi_Kudo
+> ex: https://api-conan.cyclic.app/api/character/Shinichi_Kudo
 
 | Key           | Type                 |
 | ------------- | -------------------- |

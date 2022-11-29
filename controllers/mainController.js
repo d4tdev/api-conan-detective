@@ -26,6 +26,7 @@ class MainController {
                         .attr('src');
                      const role = $(this).find('td:nth-child(4)').text().trim();
 
+                     console.log(name, picture, role);
                      characters.push({
                         name,
                         picture:
