@@ -15,7 +15,8 @@ class MainController {
             const html = response.data;
             const $ = cheerio.load(html);
 
-            $('table', html).each(function () {
+            $('.chartable', html).each(function () {
+
                $(this)
                   .find('tr')
                   .not(':first-child')
@@ -26,7 +27,6 @@ class MainController {
                         .attr('src');
                      const role = $(this).find('td:nth-child(4)').text().trim();
 
-                     console.log(name, picture, role);
                      characters.push({
                         name,
                         picture:
