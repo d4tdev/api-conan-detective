@@ -19,7 +19,7 @@
 
 ## Get One Character
 
-```GET: https://api-conan.cyclic.app /api/character/{name}```<br>
+```GET: https://api-conan.cyclic.app/api/character/{name}```<br>
 
 > ex: https://api-conan.cyclic.app /api/character/Shinichi_Kudo
 
