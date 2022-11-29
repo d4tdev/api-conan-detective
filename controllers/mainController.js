@@ -15,9 +15,7 @@ class MainController {
             const html = response.data;
             const $ = cheerio.load(html);
 
-            console.log(html)
-
-            $('.chartable').each(function () {
+            $('.chartable', html).each(function () {
                $(this)
                   .find('tr')
                   .not(':first-child')
@@ -85,7 +83,7 @@ class MainController {
             const $ = cheerio.load(html);
 
             // GET TITLE
-            $('.infobox').each(function () {
+            $('.infobox', html).each(function () {
                const image = $(this)
                   .find('tr:nth-child(2) > td > p > a > img')
                   .attr('src');
