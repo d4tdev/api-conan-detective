@@ -15,6 +15,8 @@ class MainController {
             const html = response.data;
             const $ = cheerio.load(html);
 
+            console.log(html)
+
             $('.chartable').each(function () {
                $(this)
                   .find('tr')
